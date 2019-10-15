@@ -27,7 +27,7 @@ ActiveRecord::Schema.define do
   drop_table :employees if ActiveRecord::Base.connection.table_exists?(:employees)
   create_table :stores do |t|
     t.column :name, :string
-    t.column :annual_revenue, :integer
+    t.column :annual_revenue, :integer 
     t.column :mens_apparel, :boolean
     t.column :womens_apparel, :boolean
     t.timestamps null: false
